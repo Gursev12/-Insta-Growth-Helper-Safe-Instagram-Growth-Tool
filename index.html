@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insta Growth Helper</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📈 Insta Growth Helper</h1>
+    <p>Safe Instagram Growth Tool – Hashtags, Best Times & Engagement Tracker</p>
+  </header>
+
+  <main>
+    <!-- Hashtag Generator -->
+    <section>
+      <h2>🔖 Hashtag Generator</h2>
+      <input id="hashtagInput" type="text" placeholder="Enter topic (e.g. travel)" />
+      <button onclick="generateHashtags()">Generate</button>
+      <div id="hashtags"></div>
+    </section>
+
+    <!-- Best Time Finder -->
+    <section>
+      <h2>⏰ Best Posting Time</h2>
+      <button onclick="suggestTime()">Find Best Time</button>
+      <p id="bestTime"></p>
+    </section>
+
+    <!-- Engagement Tracker -->
+    <section>
+      <h2>📊 Engagement Tracker</h2>
+      <input id="likes" type="number" placeholder="Likes" />
+      <input id="comments" type="number" placeholder="Comments" />
+      <input id="shares" type="number" placeholder="Shares" />
+      <button onclick="trackEngagement()">Track</button>
+      <p id="engagementScore"></p>
+    </section>
+
+    <!-- Reply Template -->
+    <section>
+      <h2>💬 Comment Reply Helper</h2>
+      <button onclick="replyTemplate()">Get Template</button>
+      <p id="reply"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for creators | Open Source on GitHub</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
